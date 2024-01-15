@@ -212,15 +212,18 @@
 			// 
 			// btnCloseApplication
 			// 
+			btnCloseApplication.AutoSize = true;
+			btnCloseApplication.BackColor = Color.FromArgb(46, 51, 73);
 			btnCloseApplication.FlatAppearance.BorderSize = 0;
 			btnCloseApplication.FlatStyle = FlatStyle.Flat;
 			btnCloseApplication.ForeColor = Color.White;
 			btnCloseApplication.Location = new Point(904, 22);
 			btnCloseApplication.Name = "btnCloseApplication";
-			btnCloseApplication.Size = new Size(25, 25);
+			btnCloseApplication.Size = new Size(27, 27);
 			btnCloseApplication.TabIndex = 12;
 			btnCloseApplication.Text = "X";
-			btnCloseApplication.UseVisualStyleBackColor = true;
+			btnCloseApplication.TextAlign = ContentAlignment.MiddleRight;
+			btnCloseApplication.UseVisualStyleBackColor = false;
 			btnCloseApplication.Click += btnCloseApplication_Click;
 			// 
 			// lblTitle
