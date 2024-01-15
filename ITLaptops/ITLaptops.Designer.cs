@@ -39,14 +39,12 @@
 			label4 = new Label();
 			label2 = new Label();
 			pictureBox1 = new PictureBox();
-			lblTitle = new Label();
 			PnlFormLoader = new Panel();
 			btnCloseApplication = new Button();
-			flowLayoutPanel1 = new FlowLayoutPanel();
+			lblTitle = new Label();
 			pnlNav.SuspendLayout();
 			panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-			flowLayoutPanel1.SuspendLayout();
 			SuspendLayout();
 			// 
 			// pnlNav
@@ -204,19 +202,6 @@
 			pictureBox1.TabIndex = 0;
 			pictureBox1.TabStop = false;
 			// 
-			// lblTitle
-			// 
-			lblTitle.AutoSize = true;
-			lblTitle.Dock = DockStyle.Fill;
-			lblTitle.Font = new Font("Microsoft Sans Serif", 21F, FontStyle.Bold, GraphicsUnit.Point);
-			lblTitle.ForeColor = Color.FromArgb(158, 161, 176);
-			lblTitle.Location = new Point(3, 0);
-			lblTitle.Name = "lblTitle";
-			lblTitle.Size = new Size(162, 32);
-			lblTitle.TabIndex = 10;
-			lblTitle.Text = "Dashboard";
-			lblTitle.TextAlign = ContentAlignment.MiddleCenter;
-			// 
 			// PnlFormLoader
 			// 
 			PnlFormLoader.Dock = DockStyle.Bottom;
@@ -238,14 +223,17 @@
 			btnCloseApplication.UseVisualStyleBackColor = true;
 			btnCloseApplication.Click += btnCloseApplication_Click;
 			// 
-			// flowLayoutPanel1
+			// lblTitle
 			// 
-			flowLayoutPanel1.BackColor = Color.FromArgb(24, 30, 53);
-			flowLayoutPanel1.Controls.Add(lblTitle);
-			flowLayoutPanel1.Location = new Point(475, 22);
-			flowLayoutPanel1.Name = "flowLayoutPanel1";
-			flowLayoutPanel1.Size = new Size(168, 35);
-			flowLayoutPanel1.TabIndex = 13;
+			lblTitle.AutoSize = true;
+			lblTitle.Font = new Font("Microsoft Sans Serif", 21F, FontStyle.Bold, GraphicsUnit.Point);
+			lblTitle.ForeColor = Color.FromArgb(158, 161, 176);
+			lblTitle.Location = new Point(192, 38);
+			lblTitle.Name = "lblTitle";
+			lblTitle.Size = new Size(162, 32);
+			lblTitle.TabIndex = 10;
+			lblTitle.Text = "Dashboard";
+			lblTitle.TextAlign = ContentAlignment.MiddleCenter;
 			// 
 			// ITLaptops
 			// 
@@ -253,7 +241,7 @@
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = Color.FromArgb(46, 51, 73);
 			ClientSize = new Size(951, 577);
-			Controls.Add(flowLayoutPanel1);
+			Controls.Add(lblTitle);
 			Controls.Add(btnCloseApplication);
 			Controls.Add(PnlFormLoader);
 			Controls.Add(pnlNav);
@@ -266,9 +254,8 @@
 			panel2.ResumeLayout(false);
 			panel2.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-			flowLayoutPanel1.ResumeLayout(false);
-			flowLayoutPanel1.PerformLayout();
 			ResumeLayout(false);
+			PerformLayout();
 		}
 
 		#endregion
@@ -284,9 +271,8 @@
 		private Button btnUncheckedLaptops;
 		private Button btnHelp;
 		private Button btnCredits;
-		private Label lblTitle;
 		private Panel PnlFormLoader;
 		private Button btnCloseApplication;
-		private FlowLayoutPanel flowLayoutPanel1;
+		private Label lblTitle;
 	}
 }
